@@ -27,9 +27,12 @@ function App() {
       setError("Вставь валидные значения");
       return;
     }
-    const result = (deposit / riskMovePercentage / shoulder).toFixed(0);
+    const result = (
+      (deposit / riskMovePercentage / shoulder) *
+      riskPercentage
+    ).toFixed(0);
     if (result) {
-      setPosition((deposit / riskMovePercentage / shoulder).toFixed(0));
+      setPosition(result);
       setError("");
     }
   };
