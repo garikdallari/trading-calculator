@@ -24,7 +24,7 @@ function App() {
 
   const handleButtonClick = () => {
     if (!deposit || !riskAmount || !riskMovePercentage) {
-      setError("Вставь валидные значения");
+      setError("Введи валидные значения");
       return;
     }
     const result = (
