@@ -108,7 +108,11 @@ function App() {
           </div>
         </div>
         <div className="button">
-          <button type="button" onClick={handleButtonClick}>
+          <button
+            type="button"
+            onClick={handleButtonClick}
+            className="ga-button"
+          >
             Рассчитать
           </button>
         </div>
